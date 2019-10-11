@@ -9,6 +9,7 @@ pipeline {
 
       }
       steps {
+        sh 'apk update'
         sh './configure'
       }
     }
