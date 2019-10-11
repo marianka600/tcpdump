@@ -10,7 +10,9 @@ pipeline {
 
       }
       steps {
-        sh 'sudo apk update'
+        sh 'sudo apt update'
+        sh '''sudo apt install libc-dev gcc openssl-dev make git libpcap-dev
+'''
         sh './configure'
       }
     }
