@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''echo \'Hello\'
-uname -a
-pwd'''
+        sh './configure'
       }
     }
   }
