@@ -11,7 +11,7 @@ pipeline {
       }
       steps {
         sh 'apt update'
-        sh '''apt install gcc make git libpcap-dev
+        sh '''apt install -Y gcc make git libpcap-dev
 '''
         sh './configure'
       }
