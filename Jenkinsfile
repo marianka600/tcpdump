@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         sh '''echo \'Hello\'
-uname -a'''
+uname -a
+pwd'''
       }
     }
   }
